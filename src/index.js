@@ -20,6 +20,7 @@ function onInputCLick() {
       showOnlyTheLastOne: true,
       clickToClose: true,
     });
+    clearInfoList();
     return;
   }
 
@@ -64,4 +65,4 @@ refs.inputRef.style.borderRadius = '10px';
 refs.listRef.style.listStyle = 'none';
 refs.listRef.style.padding = '0';
 refs.infoListRef.style.fontWeight = 'bold';
-refs.body.style.backgroundColor = '#ECFCEB ';
+refs.body.style.backgroundColor = '#D9FCF1 ';
