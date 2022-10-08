@@ -14,7 +14,7 @@ refs.inputRef.addEventListener('input', debounce(onInputCLick, DEBOUNCE_DELAY));
 function onInputCLick() {
   const searchQuery = refs.inputRef.value.trim().toLowerCase();
   if (!searchQuery) {
-    Notiflix.Notify.failure('Enter data to search', {
+    Notiflix.Notify.failure('Enter the name of the country', {
       position: 'center-center',
       cssAnimationStyle: 'from-top',
       showOnlyTheLastOne: true,
