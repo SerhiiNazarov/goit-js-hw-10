@@ -39,13 +39,15 @@ function onInputCLick() {
         );
         return;
       }
+      refs.listRef.insertAdjacentHTML('beforeend', createMarkup(data));
       if (data.length === 1) {
         refs.infoListRef.insertAdjacentHTML(
           'beforeend',
           createMarkupInfo(data)
         );
+        const countryNameRef = document.querySelector('.country-name');
+        countryNameRef.style.fontSize = '30px';
       }
-      refs.listRef.insertAdjacentHTML('beforeend', createMarkup(data));
     })
     .catch(error => {
       Notiflix.Notify.failure(error.message, 'Something is wrong !', {

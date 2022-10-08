@@ -1,7 +1,7 @@
 export function createMarkup(data) {
   return data
     .map(({ name, flags }) => {
-      return /*html*/ `<li class="listItem" style="display: flex; align-items: center; gap: 12px;"><img src="${flags.svg}" class="country-img" width="30px" height="25px" alt="flag"><p style="font-weight: bold;">${name.official}</p></li>`;
+      return /*html*/ `<li class="listItem" style="display: flex; align-items: center; gap: 12px;"><img src="${flags.svg}" class="country-img" width="30px" height="25px" alt="flag"><p class="country-name" style="font-weight: bold; ">${name.official}</p></li>`;
     })
     .join('');
 }
