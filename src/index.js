@@ -14,7 +14,7 @@ refs.inputRef.addEventListener('input', debounce(onInputCLick, DEBOUNCE_DELAY));
 function onInputCLick() {
   const searchQuery = refs.inputRef.value.trim().toLowerCase();
   if (!searchQuery) {
-    Notiflix.Notify.failure('Введіть дані для пошуку', {
+    Notiflix.Notify.failure('Enter data to search', {
       position: 'center-center',
       cssAnimationStyle: 'from-top',
       showOnlyTheLastOne: true,
